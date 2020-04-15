@@ -1,0 +1,18 @@
+
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="testsuite" verbose="1" >
+    <listeners>
+        <listener class-name="uk.co.barclays.listeners.Listeners"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+    </listeners>
+
+    <test name="Mouse Hover Test" >
+        <classes>
+            <class name="uk.co.barclays.testsuite.MouseHoverTest" />
+        </classes>
+    </test>
+
+</suite>

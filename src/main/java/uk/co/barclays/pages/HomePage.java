@@ -6,13 +6,9 @@ import uk.co.barclays.utility.Utility;
 public class HomePage extends Utility {
 
     By bankDropDownLink = By.linkText("Bank");
-    By borrowDropDownLink = By.linkText("Borrow");
+    By currentAccountsLink = By.xpath("//div[@class='nav-l3']//a[contains(text(),'Current accounts')]");
 
-    public void mouseHoverBankDropDownLink(){
-        mouseHoverToElement(bankDropDownLink);
-    }
-    public void mousehoverBorrowDropDownLink(){
-        mouseHoverToElement(borrowDropDownLink);
-    }
+    public void mouseHoverBankDropDownLink(){ mouseHoverToElement(bankDropDownLink); }
+    public void clickOnCurrentAccountLink(){clickOnElement(currentAccountsLink);}
 
 }

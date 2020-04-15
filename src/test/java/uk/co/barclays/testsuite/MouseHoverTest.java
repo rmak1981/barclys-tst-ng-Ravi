@@ -8,13 +8,11 @@ public class MouseHoverTest extends TestBase {
 
     HomePage homePage = new HomePage();
 
-    @Test
-    public void userShouldMouseHoverToBank(){
+    @Test(priority = 0,groups = {"Smoke"})
+    public void userShouldMouseHoverToBank() {
         homePage.mouseHoverBankDropDownLink();
+        homePage.clickOnCurrentAccountLink();
     }
-    @Test
-    public void userShouldMouseHoverToBorrow(){
-        homePage.mousehoverBorrowDropDownLink();
-    }
+
 
 }
